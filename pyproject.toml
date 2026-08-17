@@ -1,0 +1,25 @@
+[project]
+name = "fraud-detection-autoencoder"
+version = "1.0.0"
+description = "Unsupervised credit-card fraud detection using a PyOD autoencoder."
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "matplotlib==3.10.0",
+    "numpy==1.26.4",
+    "pandas==3.0.5",
+    "pyod",
+    "scikit-learn",
+    "torch==2.2.2",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "ipykernel",
+    "jupyter",
+]
+
+[tool.project-files]
+script = "fraud-detection.py"
+notebook = "fraud-detection.ipynb"
+dataset = "creditcard.csv"
+
